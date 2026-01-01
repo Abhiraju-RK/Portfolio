@@ -1,31 +1,31 @@
 import React from 'react';
 
 const Hero = () => {
-    return (
-        <section id="home" className="hero-section">
-            <div className="container hero-content">
-                <div className="hero-text slide-up">
-                    <p className="greeting">Hello, I'm</p>
-                    <h1 className="name">Abhi Raju R.K</h1>
-                    <h2 className="title">Python Full Stack Developer</h2>
-                    <p className="description">
-                        Building scalable web applications with Django, React, and modern web technologies.
-                        Passionate about backend API design and creating seamless user experiences.
-                    </p>
-                    <div className="cta-buttons">
-                        <a href="#projects" className="btn primary">View Work</a>
-                        <a href="#contact" className="btn secondary">Contact Me</a>
-                    </div>
-                </div>
+  return (
+    <section id="home" className="hero-section">
+      <div className="container hero-content">
+        <div className="hero-text slide-up">
+          <p className="greeting">Hello, I'm</p>
+          <h1 className="name">Abhi Raju R.K</h1>
+          <h2 className="title">Python Full Stack Developer</h2>
+          <p className="description">
+            Building scalable web applications with Django, React, and modern web technologies.
+            Passionate about backend API design and creating seamless user experiences.
+          </p>
+          <div className="cta-buttons">
+            <a href="#projects" className="btn primary">View Work</a>
+            <a href="#contact" className="btn secondary">Contact Me</a>
+          </div>
+        </div>
 
-                <div className="hero-image fade-in">
-                    <div className="image-wrapper glass">
-                        <img src="/profile.jpg" alt="Abhi Raju R.K" />
-                    </div>
-                </div>
-            </div>
+        <div className="hero-image fade-in">
+          <div className="image-wrapper glass">
+            <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Abhi Raju R.K" />
+          </div>
+        </div>
+      </div>
 
-            <style>{`
+      <style>{`
         .hero-section {
           min-height: 100vh;
           display: flex;
@@ -137,8 +137,8 @@ const Hero = () => {
           }
         }
       `}</style>
-        </section>
-    );
+    </section>
+  );
 };
 
 export default Hero;
